@@ -1,8 +1,8 @@
 # Tech-Assessment
-  * While there is no time limit, this assessment should take anywhere from 1 to 3 hours to complete.
+  * While there is no time limit, this assessment should take anywhere from 1 to 4 hours to complete.
   * You will not be graded on how long it takes you to complete it, but please be aware of the time expectation.
   * Estimating the amount of time it takes to complete a task is a common practice within our team
-  * **NOTE** - The time estimation does not include tasks marked as **extra-credit**
+  * **NOTE** - The time estimation does not include installation or tasks marked as **extra-credit**
 
 ## Prerequisites
   * You will need the following installed:
@@ -83,7 +83,7 @@
          * Test is the third word in this sentence, so it would match the above defined filter
    * When a word is entered into the text input, and a number is entered into the numbered input
      * Then the `filterGoatFacts` code should run
-     * It should **only** display goat facts that matching the defined inputs
+     * It should **only** display goat facts that match the defined inputs
      * All other goat facts should be hidden
      * If either or both text inputs are empty, **all** loaded goat facts should be displayed
 
