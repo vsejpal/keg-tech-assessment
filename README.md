@@ -1,36 +1,41 @@
 # Tech-Assessment
-  * While there is no time limit, this assessment should take anywhere from 1 to 4 hours to complete.
-  * You will not be graded on how long it takes you to complete it, but please be aware of the time expectation.
-  * Estimating the amount of time it takes to complete a task is a common practice within our team
-  * **NOTE** - The time estimation does not include installation or tasks marked as **extra-credit**
+  * Please complete all tasks outline in the tasks section below
+  * There is no time limit
+    * Generally, this assessment should take around 1 to 4 hours to complete.
+    * You will not be graded on how long it takes you to complete it, but please be aware of the time expectation.
+    * Estimating the amount of time it takes to complete a task is a common practice within our team
+    * **NOTE** - The time estimation does not include installation or tasks marked as **extra-credit**
+  * **Tests are strongly encouraged**
+  * Not every change required is outlined in the tasks section
+    * We want to see how you think through a problem
+    * Some tasks require updating multiple files for that task to be completed
+    * Don't be afraid to add, move, or change parts of the app. Show us what you can do
+  * You are encouraged to **show your work** through comments
+    * You don't have to comment every little change, but we would like to see your thought process
+  * While styles, look, and feel are not a priority, the app should look decent
 
 ## Prerequisites
   * You will need the following installed:
     * [Node](https://nodejs.org/en/download/)
     * [Yarn](https://classic.yarnpkg.com/en/docs/install)
     * [Git](https://git-scm.com/)
+    * [Git-Hub Account](https://github.com/)
     * [Docker](https://www.docker.com/)
 
 ## Installation
-  * Clone this repo
-    * Command: `git clone https://github.com/simpleviewinc/keg-tech-assessment`
+  * Fork this repo
+    * See the [github docs](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) on how to fork a repository if needed
+  * Clone your forked version locally
+    * Command: `git clone https://github.com/<github-user-name>/keg-tech-assessment`
+    * Be sure to replace `<github-user-name>` with your own user name
   * Install the node_modules
     * Command: `yarn install`
   * Get the project running
     * Command: `yarn start`
-      * This will start two servers a Webpack server and an API server
+      * This will start two servers; a Webpack server and an API server
       * To start them separately run the commands
-        * Command: `yarn web` - Webpack
-        * Command `yarn api` - API
-
-## Important
-  * **Tests are strongly encouraged**
-  * Not every change required is outlined above. We want to see how you think through a problem
-  * Some tasks require updating multiple files for that task to be completed
-    * Don't be afraid to add, move, or change parts of the app. Show us what you can do
-  * You are encouraged to **show your work** through comments
-    * You don't have to comment every little change, but we would like to see your thought process
-  * While styles, look, and feel are not a priority, the app should look decent
+        * `yarn web` - Webpack Server
+        * `yarn api` - API Server
 
 ## Tasks
 
