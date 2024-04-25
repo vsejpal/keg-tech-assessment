@@ -10,7 +10,9 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, "../build"),
-    filename: "[name].bundle.js"
+    filename: "[name].bundle.js",
+    libraryTarget: 'var',
+    library: 'EntryPoint'
   },
   mode: "development",
   watchOptions: {

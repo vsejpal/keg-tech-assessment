@@ -7,9 +7,7 @@ import { filterGoatFacts } from './filterGoatFacts'
 /**
  * onGetGoatFacts - Action to update the goat facts displayed on the Dom
  */
-const onGetGoatFacts = async () => {
-  console.error(`Step 3. Should be called by the Get Goat Facts button!`)
-
+export const onGetGoatFacts = async () => {
   const facts = await getGoatFacts()
 
   const filteredFacts = filterGoatFacts(facts)
@@ -18,6 +16,5 @@ const onGetGoatFacts = async () => {
 }
 
 ;(async () => {
-  console.error(`Step 2. Open the browser inspector!`)
   await onGetGoatFacts()
 })()
