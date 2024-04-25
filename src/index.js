@@ -11,7 +11,8 @@ export const onGetGoatFacts = async () => {
   const facts = await getGoatFacts()
 
   const filteredFacts = filterGoatFacts(facts)
-
+  console.log("filteredFacts")
+  console.log(filteredFacts)
   addGoatFacts(filteredFacts)
 }
 

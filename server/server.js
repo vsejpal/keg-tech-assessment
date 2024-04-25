@@ -29,7 +29,7 @@ const setupCors = (app, config = noOpObj) => {
       ? origin
       : allowedOrigins[0]
 
-    res.header('Access-Control-Allow-Origin', foundOrigin)
+    res.header('Access-Control-Allow-Origin', '*')
     res.header(
       'Access-Control-Allow-Headers',
       'Origin, X-Requested-With, Content-Type, Accept'
