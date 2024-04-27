@@ -5,7 +5,7 @@ export const filterGoatFacts = facts => {
   const filter_word = document.getElementById('ftr-word').value.trim();
   const filter_index = document.getElementById('ftr-index').value;
   
-  if (!filter_word.trim() || filter_word.split(' ').length > 1 || !filter_index.trim() || Number(filter_index) < 0) {
+  if (!filter_word.trim() || filter_word.split(' ').length > 1 || !filter_index.trim() || Number(filter_index) < 1) {
     return facts;
   }
   
@@ -25,5 +25,5 @@ const htmlEncode = input => {
 
 const doesMatchFilter  = (fact, match_word, filter_index) => {
   const fact_words = fact.toLowerCase().split(' ');
-  return fact_words.indexOf(match_word.toLowerCase()) == filter_index
+  return fact_words.indexOf(match_word.toLowerCase()) == filter_index-1
 }
