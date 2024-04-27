@@ -22,14 +22,16 @@
                   <!-- Add Input filters here -->
                   <input type="text"
                     id="ftr-word"
-                    onkeypress="return event.charCode != 32"
                     placeholder="word filter"
+                    onkeypress="return event.charCode != 32"
+                    onkeyup="EntryPoint.onFilterGoatFacts()"
                     onchange="EntryPoint.onFilterGoatFacts()"
                   >
                   <input
                     type="number"
                     id="ftr-index"
                     placeholder="word index"
+                    onkeyup="EntryPoint.onFilterGoatFacts()"
                     onchange="EntryPoint.onFilterGoatFacts()"
                   >
                 </form>

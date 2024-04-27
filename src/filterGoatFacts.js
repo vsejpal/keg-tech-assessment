@@ -23,8 +23,7 @@ const htmlEncode = input => {
       .replace(/>/g, '&gt;');
 }
 
-function doesMatchFilter (fact, match_word, filter_index) {
+const doesMatchFilter  = (fact, match_word, filter_index) => {
   const fact_words = fact.toLowerCase().split(' ');
   return fact_words.indexOf(match_word.toLowerCase()) == filter_index
-  
 }
