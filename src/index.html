@@ -24,11 +24,13 @@
                     id="ftr-word"
                     onkeypress="return event.charCode != 32"
                     placeholder="word filter"
+                    onchange="EntryPoint.onFilterGoatFacts()"
                   >
                   <input
                     type="number"
                     id="ftr-index"
                     placeholder="word index"
+                    onchange="EntryPoint.onFilterGoatFacts()"
                   >
                 </form>
                 
@@ -52,9 +54,6 @@
                 </button>
               </div>
             </div>
-            <script>
-              fetch('http://localhost:5005/goats/').then(res => res.json()).then(data => console.log(data));
-            </script>
           </div>
         </div>
       </div>

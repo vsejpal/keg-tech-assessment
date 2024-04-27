@@ -11,5 +11,7 @@ export const getGoatFacts = async () => {
 		throw new Error(`HTTP error! status: ${response.status}`);
 	}
   const data = await response.json();
+
+  localStorage.setItem("goat-facts", JSON.stringify(data))
   return data;
 }
