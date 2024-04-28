@@ -1,8 +1,11 @@
+const { api: config } = require('../configs/server.config')
+const apiURl = `http://${config.host}:${config.port}`
+
 /**
  * getGoatFacts - Gets a list of goat facts from the backend API
  */
 export const getGoatFacts = async () => {
-  const response = await fetch('http://localhost:5005/goats/', 
+  const response = await fetch(`${apiURl}/goats`,
     {
       method: 'GET'
     }
