@@ -18,9 +18,9 @@ export const filterGoatFacts = facts => {
 
 const htmlEncode = input => {
   return input
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;');
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
 }
 
 const doesMatchFilter  = (fact, match_word, filter_index) => {

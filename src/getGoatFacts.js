@@ -8,10 +8,10 @@ export const getGoatFacts = async () => {
     }
   );
   if (!response.ok) {
-		throw new Error(`HTTP error! status: ${response.status}`);
-	}
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
   const data = await response.json();
   // put data in goat-facts, so we do not call the api for filtering on the client-side.
-  localStorage.setItem("goat-facts", JSON.stringify(data))
+  localStorage.setItem('goat-facts', JSON.stringify(data))
   return data;
 }

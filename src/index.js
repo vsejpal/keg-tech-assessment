@@ -14,7 +14,7 @@ export const onGetGoatFacts = async () => {
 }
 
 export const onFilterGoatFacts = () => {
-  const facts =  JSON.parse(localStorage.getItem("goat-facts"));
+  const facts =  JSON.parse(localStorage.getItem('goat-facts'));
   const filteredFacts = filterGoatFacts(facts)
   addGoatFacts(filteredFacts)
 }
